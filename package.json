@@ -4,7 +4,9 @@
   "description": "Hapi training",
   "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "buildrun": "npm run build && node ./dist/index.js",
+    "dev": "nodemon -e ts --exec \"npm run buildrun\" "
   },
   "repository": {
     "type": "git",

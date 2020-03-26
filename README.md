@@ -7,3 +7,4 @@ From console:
 > npm i typescript nodemon @types/hapi__hapi @types/mongoose @types/bcrypt @types/node -D
 > npx tsc --init
 > npm run build
+> npm run dev
