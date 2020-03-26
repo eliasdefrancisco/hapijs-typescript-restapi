@@ -1,10 +1,14 @@
 import { Server } from '@hapi/hapi'
+import { routes } from './routes/user.routes'
 
 export const init = async () => {
-    const server = new Server({
+    const server: Server = new Server({
         port: 3000,
         host: 'localhost'
     })    
+
+    routes(server)
+    
     await server.start()
     console.log('Server runing on %s', server.info.uri)
 }
